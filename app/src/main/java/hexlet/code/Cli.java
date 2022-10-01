@@ -12,14 +12,17 @@ public class Cli {
         if (num == 2) {
             evenGame(userName);
         }
+        if (num == 3) {
+            calcGame(userName);
+        }
     }
     public static void gameNum() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet\n" + "2 - Even\n" + "0 - Exit");
+        System.out.println("1 - Greet\n" + "2 - Even\n" + "3 - Calc\n" + "0 - Exit");
         int num = scanner.nextInt();
         System.out.println("Your choice: " + num);
-        if (num == 1 || num == 2) {
+        if (num == 1 || num == 2 || num == 3) {
             askName(num);
         }
     }
@@ -48,5 +51,52 @@ public class Cli {
                 System.out.println("Congratulations, " + userName);
             }
         }
+    }
+    public static void calcGame(String userName) {
+        int i = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is the result of the expression?");
+        switch (i) {
+            case 1:
+                int randomNum1 = 1 + (int)(Math.random() * 100);
+                int randomNum2 = 1 + (int)(Math.random() * 100);
+                System.out.println("Question: " + randomNum1 + "*" + randomNum2);
+                int calcGameAnswer = scanner.nextInt();
+                if (calcGameAnswer == randomNum1 * randomNum2) {
+                    System.out.println("Correct!");
+                } else {
+                    System.out.println(calcGameAnswer + " is wrong answer ;(. Correct answer was " + (randomNum1 * randomNum2));
+                    System.out.println("Let's try again, " + userName);
+                    System.exit(0);
+                }
+                i++;
+            case 2:
+                randomNum1 = 1 + (int)(Math.random() * 100);
+                randomNum2 = 1 + (int)(Math.random() * 100);
+                System.out.println("Question: " + randomNum1 + "+" + randomNum2);
+                calcGameAnswer = scanner.nextInt();
+                if (calcGameAnswer == randomNum1 + randomNum2) {
+                    System.out.println("Correct!");
+                } else {
+                    System.out.println(calcGameAnswer + " is wrong answer ;(. Correct answer was " + (randomNum1 + randomNum2));
+                    System.out.println("Let's try again, " + userName);
+                    System.exit(0);
+                }
+                i++;
+            case 3:
+                randomNum1 = 1 + (int)(Math.random() * 100);
+                randomNum2 = 1 + (int)(Math.random() * 100);
+                System.out.println("Question: " + randomNum1 + "-" + randomNum2);
+                calcGameAnswer = scanner.nextInt();
+                if (calcGameAnswer == randomNum1 - randomNum2) {
+                    System.out.println("Correct!");
+                } else {
+                    System.out.println(calcGameAnswer + " is wrong answer ;(. Correct answer was " + (randomNum1 - randomNum2));
+                    System.out.println("Let's try again, " + userName);
+                    System.exit(0);
+                }
+                break;
+        }
+        System.out.println("Congratulations, " + userName);
     }
 }
