@@ -15,14 +15,17 @@ public class Cli {
         if (num == 3) {
             calcGame(userName);
         }
+        if (num == 4) {
+            gcdGame(userName);
+        }
     }
     public static void gameNum() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet\n" + "2 - Even\n" + "3 - Calc\n" + "0 - Exit");
+        System.out.println("1 - Greet\n" + "2 - Even\n" + "3 - Calc\n" + "4 - GCD\n" + "0 - Exit");
         int num = scanner.nextInt();
         System.out.println("Your choice: " + num);
-        if (num == 1 || num == 2 || num == 3) {
+        if (num == 1 || num == 2 || num == 3 || num == 4) {
             askName(num);
         }
     }
@@ -96,6 +99,32 @@ public class Cli {
                     System.exit(0);
                 }
                 break;
+        }
+        System.out.println("Congratulations, " + userName);
+    }
+    public static void gcdGame(String userName) {
+        int i = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Find the greatest common divisor of given numbers.");
+        for (i = 0; i <= 2; i++) {
+                int randomNum1 = 1 + (int)(Math.random() * 100);
+                int randomNum2 = 1 + (int)(Math.random() * 100);
+                System.out.println("Question: " + randomNum1 + " " + randomNum2);
+                int gcdGameAnswer = scanner.nextInt();
+                int gcd = 1;
+                for (int n = 1; n <= randomNum1 && n <= randomNum2; n++) {
+                    if (randomNum1 % n == 0 && randomNum2 % n == 0) {
+                        gcd = n;
+                    }
+                }
+            if (gcdGameAnswer == gcd) {
+                System.out.println("Correct!");
+            } else {
+                System.out.println(gcdGameAnswer + " is wrong answer ;(. Correct answer was " + gcd);
+                System.out.println("Let's try again, " + userName);
+                System.exit(0);
+            }
+
         }
         System.out.println("Congratulations, " + userName);
     }
