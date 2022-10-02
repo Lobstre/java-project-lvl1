@@ -51,7 +51,7 @@ public class Cli {
         final int hundred = 100;
         int i;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+        System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
         for (i = 0; i <= 2; i++) {
             int randomNum = 1 + (int) (Math.random() * hundred);
             System.out.println("Question: " + randomNum);
@@ -67,7 +67,7 @@ public class Cli {
                 System.out.println("Correct!");
             } else {
                 System.out.println(evenGameAnswer + " is wrong answer ;(. Correct answer was " + rightAnswer);
-                System.out.println("Let's try again, " + userName);
+                System.out.println("Let's try again, " + userName + "!");
                 System.exit(0);
             }
             if (i >= 2) {
@@ -89,7 +89,7 @@ public class Cli {
             System.out.println("Correct!");
         } else {
             System.out.println(calcGameAnswer + " is wrong answer ;(. Correct answer was " + (randomNum1 * randomNum2));
-            System.out.println("Let's try again, " + userName);
+            System.out.println("Let's try again, " + userName + "!");
             System.exit(0);
         }
         randomNum1 = 1 + (int) (Math.random() * hundred);
@@ -101,7 +101,7 @@ public class Cli {
             System.out.println("Correct!");
         } else {
             System.out.println(calcGameAnswer + " is wrong answer ;(. Correct answer was " + (randomNum1 + randomNum2));
-            System.out.println("Let's try again, " + userName);
+            System.out.println("Let's try again, " + userName + "!");
             System.exit(0);
         }
         randomNum1 = 1 + (int) (Math.random() * hundred);
@@ -113,7 +113,7 @@ public class Cli {
             System.out.println("Correct!");
         } else {
             System.out.println(calcGameAnswer + " is wrong answer ;(. Correct answer was " + (randomNum1 - randomNum2));
-            System.out.println("Let's try again, " + userName);
+            System.out.println("Let's try again, " + userName + "!");
             System.exit(0);
         }
         System.out.println("Congratulations, " + userName + "!");
@@ -140,7 +140,7 @@ public class Cli {
                 System.out.println("Correct!");
             } else {
                 System.out.println(gcdGameAnswer + " is wrong answer ;(. Correct answer was " + gcd);
-                System.out.println("Let's try again, " + userName);
+                System.out.println("Let's try again, " + userName + "!");
                 System.exit(0);
             }
 
@@ -177,7 +177,7 @@ public class Cli {
                 System.out.println("Correct!");
             } else {
                 System.out.println(randGameAnswer + " is wrong answer ;(. Correct answer was " + answer);
-                System.out.println("Let's try again, " + userName);
+                System.out.println("Let's try again, " + userName + "!");
                 System.exit(0);
             }
         }
@@ -210,7 +210,7 @@ public class Cli {
                 System.out.println("Correct!");
             } else {
                 System.out.println(primeGameAnswer + " is wrong answer ;(. Correct answer was " + answer);
-                System.out.println("Let's try again, " + userName);
+                System.out.println("Let's try again, " + userName + "!");
                 System.exit(0);
             }
         }
