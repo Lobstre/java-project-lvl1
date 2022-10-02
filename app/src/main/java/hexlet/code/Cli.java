@@ -82,7 +82,7 @@ public class Cli {
         System.out.println("What is the result of the expression?");
         int randomNum1 = 1 + (int) (Math.random() * hundred);
         int randomNum2 = 1 + (int) (Math.random() * hundred);
-        System.out.println("Question: " + randomNum1 + "*" + randomNum2);
+        System.out.println("Question: " + randomNum1 + " * " + randomNum2);
         System.out.print("Your answer: ");
         int calcGameAnswer = scanner.nextInt();
         if (calcGameAnswer == randomNum1 * randomNum2) {
@@ -94,7 +94,7 @@ public class Cli {
         }
         randomNum1 = 1 + (int) (Math.random() * hundred);
         randomNum2 = 1 + (int) (Math.random() * hundred);
-        System.out.println("Question: " + randomNum1 + "+" + randomNum2);
+        System.out.println("Question: " + randomNum1 + " + " + randomNum2);
         System.out.print("Your answer: ");
         calcGameAnswer = scanner.nextInt();
         if (calcGameAnswer == randomNum1 + randomNum2) {
@@ -106,7 +106,7 @@ public class Cli {
         }
         randomNum1 = 1 + (int) (Math.random() * hundred);
         randomNum2 = 1 + (int) (Math.random() * hundred);
-        System.out.println("Question: " + randomNum1 + "-" + randomNum2);
+        System.out.println("Question: " + randomNum1 + " - " + randomNum2);
         System.out.print("Your answer: ");
         calcGameAnswer = scanner.nextInt();
         if (calcGameAnswer == randomNum1 - randomNum2) {
