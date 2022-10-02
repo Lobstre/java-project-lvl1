@@ -16,16 +16,24 @@ public class Cli {
                 gcdGame(userName);
             case 5:
                 progressionGame(userName);
+            case 6:
+                primeGame(userName);
         }
     }
     public static void gameNum() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet\n" + "2 - Even\n" + "3 - Calc\n" + "4 - GCD");
-        System.out.println("5 - Progression\n" + "0 - Exit");
+        System.out.println("""
+                1 - Greet
+                2 - Even
+                3 - Calc
+                4 - GCD
+                5 - Progression
+                6 - Prime
+                0 - Exit""");
+        System.out.print("Your choice: ");
         int gameNum = scanner.nextInt();
-        System.out.println("Your choice: " + gameNum);
-        if (gameNum == 1 || gameNum == 2 || gameNum == 3 || gameNum == 4 || gameNum == 5) {
+        if (gameNum == 1 || gameNum == 2 || gameNum == 3 || gameNum == 4 || gameNum == 5 || gameNum == 6) {
             askName(gameNum);
         }
     }
@@ -58,7 +66,6 @@ public class Cli {
         }
     }
     public static void calcGame(String userName) {
-        int i = 1;
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is the result of the expression?");
         int randomNum1 = 1 + (int)(Math.random() * 100);
@@ -73,7 +80,6 @@ public class Cli {
             System.out.println("Let's try again, " + userName);
             System.exit(0);
         }
-        i++;
         randomNum1 = 1 + (int)(Math.random() * 100);
         randomNum2 = 1 + (int)(Math.random() * 100);
         System.out.println("Question: " + randomNum1 + "+" + randomNum2);
@@ -86,7 +92,6 @@ public class Cli {
             System.out.println("Let's try again, " + userName);
             System.exit(0);
         }
-        i++;
         randomNum1 = 1 + (int)(Math.random() * 100);
         randomNum2 = 1 + (int)(Math.random() * 100);
         System.out.println("Question: " + randomNum1 + "-" + randomNum2);
@@ -157,6 +162,38 @@ public class Cli {
                 System.out.println("Correct!");
             } else {
                 System.out.println(randGameAnswer + " is wrong answer ;(. Correct answer was " + answer);
+                System.out.println("Let's try again, " + userName);
+                System.exit(0);
+            }
+        }
+        System.out.println("Congratulations, " + userName + "!");
+        System.exit(0);
+    }
+    public static void primeGame(String userName) {
+        int i;
+        int n;
+        int k;
+        String answer = "";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+        for (i = 0; i <= 2; i++) {
+            int randNum = 1 + (int)(Math.random() * 100);
+            System.out.print("Question: " + randNum);
+            for (k = 2; k <= (randNum / 2); k++) {
+                n = randNum % k;
+                if (n == 0) {
+                    answer = "no";
+                    break;
+                } else {
+                    answer = "yes";
+                }
+            }
+            System.out.print("\nYour answer: ");
+            String primeGameAnswer = scanner.nextLine();
+            if (primeGameAnswer.equals(answer)) {
+                System.out.println("Correct!");
+            } else {
+                System.out.println(primeGameAnswer + " is wrong answer ;(. Correct answer was " + answer);
                 System.out.println("Let's try again, " + userName);
                 System.exit(0);
             }
