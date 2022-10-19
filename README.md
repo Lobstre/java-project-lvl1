@@ -5,14 +5,14 @@
 
 ### Run Brain-games: make run-dist or ./build/install/app/bin/app
 
-### Greeting Asciinema: https://asciinema.org/a/Bcn5aOoloYsKB2naBvvE2mENw
+### Greeting Asciinema: [![asciicast](https://asciinema.org/a/O2x4LQzk6FOMOF1u0xjewNhFw.svg)](https://asciinema.org/a/O2x4LQzk6FOMOF1u0xjewNhFw)
 
-### Even Asciinema: https://asciinema.org/a/eyWpiY76KrhxebER0s42V9Z2A
+### Even Asciinema: [![asciicast](https://asciinema.org/a/pXhn3qh6nO34ARCxkIdNTrS0g.svg)](https://asciinema.org/a/pXhn3qh6nO34ARCxkIdNTrS0g)
 
-### Calc Asciinema: https://asciinema.org/a/6AuXZnl1bwcVxWjVM2omo1F5X
+### Calc Asciinema: [![asciicast](https://asciinema.org/a/jTucC6PbhTp8xkNC50tUdv4Qt.svg)](https://asciinema.org/a/jTucC6PbhTp8xkNC50tUdv4Qt)
 
-### GCD Asciinema: https://asciinema.org/a/QXm7OrdI9ypWBKfiFKC0eANng
+### GCD Asciinema: [![asciicast](https://asciinema.org/a/ZCjtiVLmDcS7lTYBV9BqVwgCr.svg)](https://asciinema.org/a/ZCjtiVLmDcS7lTYBV9BqVwgCr)
 
-### Progression Asciinema: https://asciinema.org/a/KZkwH7hTp6dnl1xCE9zBaHVbv
+### Progression Asciinema: [![asciicast](https://asciinema.org/a/6ytDqWOybs0Fw3RxXMl6BzxVi.svg)](https://asciinema.org/a/6ytDqWOybs0Fw3RxXMl6BzxVi)
 
-### Prime Asciinema: https://asciinema.org/a/RqgGgFNHgD3apSN5wZ8YDORbG
+### Prime Asciinema: [![asciicast](https://asciinema.org/a/FSXj7FAMvbv6zOrpChZSTLSMZ.svg)](https://asciinema.org/a/FSXj7FAMvbv6zOrpChZSTLSMZ)
