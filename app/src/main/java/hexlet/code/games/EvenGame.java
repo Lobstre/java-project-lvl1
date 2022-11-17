@@ -6,7 +6,7 @@ public class EvenGame {
 
     public static void evenGame(String userName) {
 
-        String[][] qAndAs = new String[Engine.stage][2];
+        String[][] qAndAs = new String[Engine.STAGE][2];
         for (int i = 0; i < qAndAs.length; i++) {
             int question = Utils.someNum();
             qAndAs[i][0] = String.valueOf(question);

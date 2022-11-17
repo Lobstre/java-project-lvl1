@@ -3,8 +3,8 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 public class PrimeGame {
     public static void primeGame(String userName) {
-        String[][] qAndAs = new String[Engine.stage][2];
-        String question ="Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+        String[][] qAndAs = new String[Engine.STAGE][2];
+        String question = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         for (int i = 0; i < qAndAs.length; i++) {
             int result = Utils.someNum();
             qAndAs[i][0] = String.valueOf(result);
@@ -15,13 +15,11 @@ public class PrimeGame {
     }
 
     public static boolean isPrime(int n) {
-        final int firstNotPrimeNumber = 4;
-        switch (n) {
-            case 0:
-            case 1:
-                return false;
+        final int firstNotPrime = 4;
+        if (n == 0 || n == 1) {
+            return false;
         }
-        if (n < firstNotPrimeNumber) {
+        if (n < firstNotPrime) {
             return true;
         }
         if (n % (int) (Math.sqrt(n)) == 0) {
