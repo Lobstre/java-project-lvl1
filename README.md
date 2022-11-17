@@ -5,14 +5,14 @@
 
 ### Run Brain-games: make run-dist or ./build/install/app/bin/app
 
-### Greeting Asciinema: [![asciicast](https://asciinema.org/a/O2x4LQzk6FOMOF1u0xjewNhFw.svg)](https://asciinema.org/a/O2x4LQzk6FOMOF1u0xjewNhFw)
+### Greeting Asciinema: <script id="asciicast-q61kHJbb60RpOVXkVCSqnnoz3" src="https://asciinema.org/a/q61kHJbb60RpOVXkVCSqnnoz3.js" async></script>
 
-### Even Asciinema: [![asciicast](https://asciinema.org/a/pXhn3qh6nO34ARCxkIdNTrS0g.svg)](https://asciinema.org/a/pXhn3qh6nO34ARCxkIdNTrS0g)
+### Even Asciinema: <script id="asciicast-JYnEoKNAq6BbUhDqZCdheUkGi" src="https://asciinema.org/a/JYnEoKNAq6BbUhDqZCdheUkGi.js" async></script>
 
-### Calc Asciinema: [![asciicast](https://asciinema.org/a/jTucC6PbhTp8xkNC50tUdv4Qt.svg)](https://asciinema.org/a/jTucC6PbhTp8xkNC50tUdv4Qt)
+### Calc Asciinema: <script id="asciicast-ilDMXtURqZr4HIRRROfjUefaV" src="https://asciinema.org/a/ilDMXtURqZr4HIRRROfjUefaV.js" async></script>
 
-### GCD Asciinema: [![asciicast](https://asciinema.org/a/ZCjtiVLmDcS7lTYBV9BqVwgCr.svg)](https://asciinema.org/a/ZCjtiVLmDcS7lTYBV9BqVwgCr)
+### GCD Asciinema: <script id="asciicast-JPRxY45cbo8Gh89gaZnYptnxX" src="https://asciinema.org/a/JPRxY45cbo8Gh89gaZnYptnxX.js" async></script>
 
-### Progression Asciinema: [![asciicast](https://asciinema.org/a/6ytDqWOybs0Fw3RxXMl6BzxVi.svg)](https://asciinema.org/a/6ytDqWOybs0Fw3RxXMl6BzxVi)
+### Progression Asciinema: <script id="asciicast-XlTyt1P0MmcaZmjw5OTYSuV5j" src="https://asciinema.org/a/XlTyt1P0MmcaZmjw5OTYSuV5j.js" async></script>
 
-### Prime Asciinema: [![asciicast](https://asciinema.org/a/FSXj7FAMvbv6zOrpChZSTLSMZ.svg)](https://asciinema.org/a/FSXj7FAMvbv6zOrpChZSTLSMZ)
+### Prime Asciinema: <script id="asciicast-w3uu8wuqpx5UkLuioQVjnhhz9" src="https://asciinema.org/a/w3uu8wuqpx5UkLuioQVjnhhz9.js" async></script>
