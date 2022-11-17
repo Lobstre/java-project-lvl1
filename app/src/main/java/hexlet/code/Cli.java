@@ -31,7 +31,7 @@ public class Cli {
 
     public static void gameNum() {
         boolean found = false;
-        String[] gameNums = new String[]{"1", "2", "3", "4", "5", "6"};
+        String[] gameNumbers = new String[]{"1", "2", "3", "4", "5", "6"};
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("""
@@ -44,7 +44,7 @@ public class Cli {
                 0 - Exit""");
         System.out.print("Your choice: ");
         String gameNum = scanner.nextLine();
-        for (String i : gameNums) {
+        for (String i : gameNumbers) {
             if (i.equals(gameNum)) {
                 found = true;
                 break;
