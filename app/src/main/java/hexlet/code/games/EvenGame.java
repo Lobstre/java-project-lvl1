@@ -13,7 +13,7 @@ public class EvenGame {
             qAndAs[i][1] = (isEven(question) ? "yes" : "no");
         }
 
-        Engine.braingamesEngine(qAndAs, "Answer 'yes' if number even otherwise answer 'no'.", userName);
+        Engine.braingamesEngine(qAndAs, "Answer 'yes' if the number is even, otherwise answer 'no'.", userName);
     }
     public static boolean isEven(int number) {
         return number % 2 == 0;

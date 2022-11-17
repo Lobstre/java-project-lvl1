@@ -16,21 +16,20 @@ public class PrimeGame {
 
     public static boolean isPrime(int n) {
         final int firstNotPrimeNumber = 4;
-        final boolean isFalse = false;
         switch (n) {
             case 0:
             case 1:
-                return isFalse;
+                return false;
         }
         if (n < firstNotPrimeNumber) {
             return true;
         }
         if (n % (int) (Math.sqrt(n)) == 0) {
-            return isFalse;
+            return false;
         }
         for (int i = 2; i < Math.sqrt(n); i++) {
             if (n % i == 0) {
-                return isFalse;
+                return false;
             }
         }
         return true;
