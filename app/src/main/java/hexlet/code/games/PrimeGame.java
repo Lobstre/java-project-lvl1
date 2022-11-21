@@ -4,16 +4,6 @@ import hexlet.code.Utils;
 public class PrimeGame {
     static final int THREE = 3;
 
-    private static int three = THREE;
-
-    public static int getThree() {
-        return three;
-    }
-
-    public static void setThree(int three) {
-        PrimeGame.three = three;
-    }
-
     public static void primeGame() {
         String[][] qAndAs = new String[Engine.STAGE][2];
         String question = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
@@ -26,7 +16,7 @@ public class PrimeGame {
     }
 
     public static boolean isPrime(int n) {
-        if (n == getThree()) {
+        if (n == THREE) {
             return true;
         }
         if (n == 0 || n == 1 || n % (int) (Math.sqrt(n)) == 0) {
