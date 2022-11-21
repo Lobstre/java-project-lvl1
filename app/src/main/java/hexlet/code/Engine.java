@@ -1,18 +1,21 @@
 package hexlet.code;
-import hexlet.code.games.*;
+import hexlet.code.games.EvenGame;
+import hexlet.code.games.CalcGame;
+import hexlet.code.games.GCDGame;
+import hexlet.code.games.ProgressionGame;
+import hexlet.code.games.PrimeGame;
 
 import java.util.Scanner;
 
 public class Engine {
     public static final int STAGE = 3;
-    private static String userName;
+    public static String userName;
 
     public static void setUserName() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!\n" + "May I have your name?");
-        String userName = scanner.nextLine();
+        userName = scanner.nextLine();
         System.out.println("Hello, " + userName + "!");
-        Engine.userName = userName;
     }
 
     public static void whatGame(String gameNum) {
