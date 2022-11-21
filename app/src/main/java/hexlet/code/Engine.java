@@ -1,20 +1,18 @@
 package hexlet.code;
 import hexlet.code.games.*;
+
 import java.util.Scanner;
 
 public class Engine {
     public static final int STAGE = 3;
-    public static Scanner scanner = new Scanner(System.in);
     private static String userName;
 
     public static void setUserName() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!\n" + "May I have your name?");
-        Engine.userName = scanner.nextLine();
-        System.out.println("Hello, " + Engine.userName + "!");
-    }
-
-    public static String getUserName() {
-        return Engine.userName;
+        String userName = scanner.nextLine();
+        System.out.println("Hello, " + userName + "!");
+        Engine.userName = userName;
     }
 
     public static void whatGame(String gameNum) {
@@ -36,6 +34,7 @@ public class Engine {
     }
     public static void braingamesEngine(String[][] qAndAs, String question) {
         System.out.println(question);
+        Scanner scanner = new Scanner(System.in);
         for (String[] qAndA : qAndAs) {
             System.out.println("Question: " + qAndA[0]);
             System.out.println("Your answer: ");
@@ -49,12 +48,12 @@ public class Engine {
                         + qAndA[1]
                         + "'.\n"
                         + "Let's try again, "
-                        + getUserName()
+                        + userName
                         + "!");
                 System.exit(0);
             }
         }
-        System.out.println("Congratulations, " + getUserName() + "!");
+        System.out.println("Congratulations, " + userName + "!");
         System.exit(0);
     }
 
