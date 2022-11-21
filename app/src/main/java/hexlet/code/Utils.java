@@ -10,6 +10,6 @@ public class Utils {
     }
 
         public static int someNum() {
-        return someNum(0, HUNDRED);
+        return someNum(1, HUNDRED);
     }
 }

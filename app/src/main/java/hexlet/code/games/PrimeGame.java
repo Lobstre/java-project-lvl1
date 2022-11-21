@@ -2,7 +2,7 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 public class PrimeGame {
-    public static void primeGame(String userName) {
+    public static void primeGame() {
         String[][] qAndAs = new String[Engine.STAGE][2];
         String question = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         for (int i = 0; i < qAndAs.length; i++) {
@@ -11,7 +11,7 @@ public class PrimeGame {
             qAndAs[i][1] = isPrime(result) ? "yes" : "no";
         }
 
-        Engine.braingamesEngine(qAndAs, question, userName);
+        Engine.braingamesEngine(qAndAs, question);
     }
 
     public static boolean isPrime(int n) {

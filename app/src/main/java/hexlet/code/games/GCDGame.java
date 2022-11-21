@@ -3,7 +3,7 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 public class GCDGame {
 
-    public static void gcdGame(String userName) {
+    public static void gcdGame() {
         String question = "Find the greatest common divisor of given numbers.";
         String[][] qAndAs = new String[Engine.STAGE][2];
         for (int i = 0; i < qAndAs.length; i++) {
@@ -14,7 +14,7 @@ public class GCDGame {
             qAndAs[i][1] = gcdIs(num1, num2);
         }
 
-        Engine.braingamesEngine(qAndAs, question, userName);
+        Engine.braingamesEngine(qAndAs, question);
     }
     public static String gcdIs(int number1, int number2) {
         while (number2 != 0) {

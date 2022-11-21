@@ -1,34 +1,7 @@
 package hexlet.code;
-import hexlet.code.games.EvenGame;
-import hexlet.code.games.CalcGame;
-import hexlet.code.games.GCDGame;
-import hexlet.code.games.ProgressionGame;
-import hexlet.code.games.PrimeGame;
-
 import java.util.Scanner;
 
 public class Cli {
-    public static void askName(String gameNum) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!\n" + "May I have your name?");
-        String userName = scanner.nextLine();
-        System.out.println("Hello, " + userName + "!");
-        switch (gameNum) {
-            case "2":
-                EvenGame.evenGame(userName);
-            case "3":
-                CalcGame.calcGame(userName);
-            case "4":
-                GCDGame.gcdGame(userName);
-            case "5":
-                ProgressionGame.progressionGame(userName);
-            case "6":
-                PrimeGame.primeGame(userName);
-            default:
-                break;
-        }
-    }
-
     public static void gameNum() {
         boolean found = false;
         String[] gameNumbers = new String[]{"1", "2", "3", "4", "5", "6"};
@@ -51,7 +24,7 @@ public class Cli {
             }
         }
         if (found) {
-            askName(gameNum);
+            Engine.whatGame(gameNum);
         }
     }
 }

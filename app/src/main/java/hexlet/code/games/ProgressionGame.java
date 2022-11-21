@@ -6,7 +6,7 @@ public class ProgressionGame {
     static final int SHORTEST = 5;
     static final int LONGEST = 20;
     static final int LIMIT = 10;
-    public static void progressionGame(String userName) {
+    public static void progressionGame() {
         String[][] qAndAs = new String[Engine.STAGE][2];
         String question = "What number is missing in the progression?";
         for (int i = 0; i < qAndAs.length; i++) {
@@ -18,10 +18,10 @@ public class ProgressionGame {
             qAndAs[i][0] = makeQuestion(numbers, qNum);
             qAndAs[i][1] = String.valueOf(numbers[qNum]);
         }
-        Engine.braingamesEngine(qAndAs, question, userName);
+        Engine.braingamesEngine(qAndAs, question);
     }
 
-    public static int[] progression(int start, int finish, int step) {
+    private static int[] progression(int start, int finish, int step) {
         int[] numbers = new int[finish];
         numbers[0] = start;
         for (int j = 1; j < numbers.length; j++) {
