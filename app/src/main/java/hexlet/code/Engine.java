@@ -9,7 +9,12 @@ import java.util.Scanner;
 
 public class Engine {
     public static final int STAGE = 3;
-    public static String userName;
+
+    private static String userName;
+
+    public static String getUserName() {
+        return userName;
+    }
 
     public static void setUserName() {
         Scanner scanner = new Scanner(System.in);
@@ -51,12 +56,12 @@ public class Engine {
                         + qAndA[1]
                         + "'.\n"
                         + "Let's try again, "
-                        + userName
+                        + getUserName()
                         + "!");
                 System.exit(0);
             }
         }
-        System.out.println("Congratulations, " + userName + "!");
+        System.out.println("Congratulations, " + getUserName() + "!");
         System.exit(0);
     }
 

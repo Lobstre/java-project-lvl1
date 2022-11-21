@@ -2,15 +2,18 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 public class PrimeGame {
-    public static int getNOTPRIME() {
-        return NOTPRIME;
+    static final int FOUR = 4;
+
+    private static int notPrime = FOUR;
+
+    public static int getNotPrime() {
+        return notPrime;
     }
 
-    public static void setNOTPRIME(int NOTPRIME) {
-        PrimeGame.NOTPRIME = NOTPRIME;
+    public static void setNotPrime(int notPrime) {
+        PrimeGame.notPrime = notPrime;
     }
 
-    private static int NOTPRIME = 4;
     public static void primeGame() {
         String[][] qAndAs = new String[Engine.STAGE][2];
         String question = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
@@ -26,7 +29,7 @@ public class PrimeGame {
         if (n == 0 || n == 1 || n % (int) (Math.sqrt(n)) == 0) {
             return false;
         }
-        if (n < getNOTPRIME()) {
+        if (n < getNotPrime()) {
             return true;
         }
         for (int i = 2; i < Math.sqrt(n); i++) {
