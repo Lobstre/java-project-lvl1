@@ -4,14 +4,14 @@ import hexlet.code.Utils;
 public class PrimeGame {
     static final int THREE = 3;
 
-    private static int firstPrime = THREE;
+    private static int three = THREE;
 
-    public static int getFirstPrime() {
-        return firstPrime;
+    public static int getThree() {
+        return three;
     }
 
-    public static void setFirstPrime(int firstPrime) {
-        PrimeGame.firstPrime = firstPrime;
+    public static void setThree(int three) {
+        PrimeGame.three = three;
     }
 
     public static void primeGame() {
@@ -26,7 +26,7 @@ public class PrimeGame {
     }
 
     public static boolean isPrime(int n) {
-        if (n == getFirstPrime()) {
+        if (n == getThree()) {
             return true;
         }
         if (n == 0 || n == 1 || n % (int) (Math.sqrt(n)) == 0) {
