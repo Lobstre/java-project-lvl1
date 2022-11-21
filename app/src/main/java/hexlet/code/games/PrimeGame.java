@@ -2,16 +2,16 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 public class PrimeGame {
-    static final int FOUR = 4;
+    static final int THREE = 3;
 
-    private static int notPrime = FOUR;
+    private static int firstPrime = THREE;
 
-    public static int getNotPrime() {
-        return notPrime;
+    public static int getFirstPrime() {
+        return firstPrime;
     }
 
-    public static void setNotPrime(int notPrime) {
-        PrimeGame.notPrime = notPrime;
+    public static void setFirstPrime(int firstPrime) {
+        PrimeGame.firstPrime = firstPrime;
     }
 
     public static void primeGame() {
@@ -26,11 +26,11 @@ public class PrimeGame {
     }
 
     public static boolean isPrime(int n) {
+        if (n == getFirstPrime()) {
+            return true;
+        }
         if (n == 0 || n == 1 || n % (int) (Math.sqrt(n)) == 0) {
             return false;
-        }
-        if (n < getNotPrime()) {
-            return true;
         }
         for (int i = 2; i < Math.sqrt(n); i++) {
             if (n % i == 0) {
