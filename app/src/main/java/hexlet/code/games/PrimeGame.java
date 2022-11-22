@@ -15,7 +15,7 @@ public class PrimeGame {
         Engine.braingamesEngine(qAndAs, question);
     }
 
-    public static boolean isPrime(int n) {
+    private static boolean isPrime(int n) {
         if (n == THREE) {
             return true;
         }

@@ -30,7 +30,7 @@ public class ProgressionGame {
         return numbers;
     }
 
-    public static String makeQuestion(int[] numbers, int qNum) {
+    private static String makeQuestion(int[] numbers, int qNum) {
         StringBuilder newString = new StringBuilder();
         if (qNum == 0) {
             newString.append("..");

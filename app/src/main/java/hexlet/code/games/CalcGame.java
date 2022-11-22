@@ -20,7 +20,7 @@ public class CalcGame {
         Engine.braingamesEngine(qAndAs, question);
     }
 
-    public static String calculate(int num1, int num2, String sign) {
+    private static String calculate(int num1, int num2, String sign) {
         int result = switch (sign) {
             case ("+") -> num1 + num2;
             case ("-") -> num1 - num2;

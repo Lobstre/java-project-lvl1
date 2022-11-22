@@ -9,7 +9,7 @@ public class Utils {
         return random.nextInt(max - min) + min;
     }
 
-        public static int someNum() {
+    public static int someNum() {
         return someNum(1, HUNDRED);
     }
 }

@@ -13,10 +13,9 @@ public class GCDGame {
             qAndAs[i][0] = num1 + " " + num2;
             qAndAs[i][1] = gcdIs(num1, num2);
         }
-
         Engine.braingamesEngine(qAndAs, question);
     }
-    public static String gcdIs(int number1, int number2) {
+    private static String gcdIs(int number1, int number2) {
         while (number2 != 0) {
             int mod = number1 % number2;
             number1 = number2;

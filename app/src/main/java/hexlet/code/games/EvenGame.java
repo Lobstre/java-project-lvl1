@@ -15,7 +15,7 @@ public class EvenGame {
 
         Engine.braingamesEngine(qAndAs, question);
     }
-    public static boolean isEven(int number) {
+    private static boolean isEven(int number) {
         return number % 2 == 0;
     }
 }

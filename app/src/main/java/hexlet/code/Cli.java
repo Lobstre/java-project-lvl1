@@ -1,4 +1,10 @@
 package hexlet.code;
+import hexlet.code.games.EvenGame;
+import hexlet.code.games.CalcGame;
+import hexlet.code.games.GCDGame;
+import hexlet.code.games.ProgressionGame;
+import hexlet.code.games.PrimeGame;
+
 import java.util.Scanner;
 
 public class Cli {
@@ -24,7 +30,23 @@ public class Cli {
             }
         }
         if (found) {
-            Engine.whatGame(gameNum);
+            switch (gameNum) {
+                case "1":
+                    Engine.greet();
+                    break;
+                case "2":
+                    EvenGame.evenGame();
+                case "3":
+                    CalcGame.calcGame();
+                case "4":
+                    GCDGame.gcdGame();
+                case "5":
+                    ProgressionGame.progressionGame();
+                case "6":
+                    PrimeGame.primeGame();
+                default:
+                    break;
+            }
         }
     }
 }
