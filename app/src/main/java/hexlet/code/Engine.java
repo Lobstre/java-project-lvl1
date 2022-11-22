@@ -5,13 +5,6 @@ import java.util.Scanner;
 public class Engine {
     public static final int STAGE = 3;
 
-    public static void greet() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!\n" + "May I have your name?");
-        String userName = scanner.nextLine();
-        System.out.println("Hello, " + userName + "!");
-    }
-
     public static void braingamesEngine(String[][] qAndAs, String question) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!\n" + "May I have your name?");
